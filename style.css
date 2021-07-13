@@ -1,0 +1,148 @@
+
+/* ---------import google fonts----------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* -------------header section-------------- */
+
+.header{
+    width:1440px;
+    height: 677px;
+    background-color: #2D25A0;
+    margin: auto;
+}
+.navbar{
+    height: 44px;
+    /* border: 2px solid black; */
+    padding-top: 42px;
+}
+
+.header__info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.header__left{
+    /* border: 2px solid red; */
+    width: 485px;
+    height:230px;
+}
+.header__heading{
+    font-size: 64px;
+    color:#FFFFFF;
+}
+.header__btn{
+    background-color: #E02C6D;
+    color:#FFFFFF;
+    font-weight: 500;
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px 10px 24px;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+.header__icon{
+    padding-left:8px;
+}
+
+.header__right{
+    /* border: 2px solid rgb(14, 201, 60); */
+}
+.header__img{
+   width:556.01px;
+height: 438px;
+}
+
+
+/* -----------------main section---------------- */
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.players{
+    width:1110px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:30px;
+    grid-row-gap:27px;
+    /* border: 2px solid green; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    
+}
+
+.player{
+    width:315px;
+    height: 459px;
+    /* border: 2px solid rgb(221, 13, 13); */
+    padding:15px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    
+}
+.player__name{
+    color: #18191F;
+    margin-bottom: 10px;
+}
+.player__info{
+    color:#6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+}
+.player__img{
+    width: 300px;
+    height: 256px;
+    margin-bottom: 16px;
+}
+
+
+/* ---------------footer section----------- */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:158px;
+    margin-bottom: 58.19px;
+
+}
+.footer__img{
+    width: 483.87px;
+    height: 110px;
+}
+
+.footer__icons{
+    width: 174.81px;
+    height: 36.81px;
+    margin:20px 0px;
+    /* border: 2px solid rebeccapurple; */
+}
+.footer__icon{   
+    background-color: #e6e6e9;
+    width:32px;
+    height: 32px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.footer__icon i{
+    color:#969BAB;
+    position: relative;
+    top:5px;
+    left: 8px; 
+}
+
+.footer__para{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 400;
+}
