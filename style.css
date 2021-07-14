@@ -16,14 +16,9 @@
 /* -------------header section-------------- */
 
 .header{
-    width:100%;
     height: 677px;
     background-color: #2D25A0;
-}
-.navbar{
-    height: 44px;
-    /* border: 2px solid black; */
-    padding-top: 42px;
+    padding-top:86px;
 }
 
 .header__info{
@@ -35,7 +30,6 @@
 
 
 .header__left{
-    /* border: 2px solid red; */
     width: 485px;
     height:230px;
  
@@ -65,9 +59,6 @@
     padding-left:8px;
 }
 
-.header__right{
-    /* border: 2px solid rgb(14, 201, 60); */
-}
 .header__img{
    width:556.01px;
 height: 438px;
@@ -85,8 +76,8 @@ height: 438px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 
-    /* display: none; */
 }
 .players{
     width:1110px;
@@ -94,7 +85,6 @@ height: 438px;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap:30px;
     grid-row-gap:27px;
-    /* border: 2px solid green; */
     align-items: center;
     justify-content: center;
     margin-top: 70px;
@@ -104,7 +94,6 @@ height: 438px;
 .player{
     width:315px;
     height: 459px;
-    /* border: 2px solid rgb(221, 13, 13); */
     padding:15px;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     
@@ -131,8 +120,6 @@ height: 438px;
 /* -------------embeded video section--------------- */
 .match-video{
     margin-top:165px;
-
-    /* display: none; */
 }
 .match-video__title{
     font-size: 34px;
@@ -145,14 +132,10 @@ height: 438px;
 
 .trending-news{
     display: flex;
-    /* border: 2px solid gold; */
     margin-top:125px;
-
-    /* display: none; */
 }
 
 .next-match{
-    /* border: 2px solid tomato; */
     margin-right: 50px;
 }
 .match__container{
@@ -164,7 +147,7 @@ height: 438px;
     justify-content: center;
     margin-top:7px;
     padding-left: 10px;
-    /* border: 2px solid red; */
+
     
 
 }
@@ -183,9 +166,6 @@ height: 438px;
  padding-left:6px;
  color:rgb(243, 42, 7);
 }
-.match--results{
-    /* width: 500px; */
-}
 .match__result{
     position: relative;
     right: 50px;
@@ -201,8 +181,6 @@ height: 438px;
     margin-top:158px;
     margin-bottom: 58.19px;
 
-    /* display: none; */
-
 }
 .footer__img{
     width: 483.87px;
@@ -213,7 +191,6 @@ height: 438px;
     width: 174.81px;
     height: 36.81px;
     margin:20px 0px;
-    /* border: 2px solid rebeccapurple; */
  
 
 }
@@ -244,38 +221,35 @@ height: 438px;
 
      /* --------------------Media Query =--------------- */
 
-     @media only screen and (max-width:688px){
-
-        /* ------------header section------------- */
-        .navbar{
-            padding:0px;
-        }
-        .header__info{
-            /* flex-direction:column; */
+   @media only screen and (max-width:688px){
+     
+         .header__info{
+            overflow-x:hidden;
             flex-wrap: wrap;
             height: 695px;
-        }
-        .header__left{
-            width: 278px;
-            height: 138px;
-        }
-        .header__heading{
+         }
+         .header__left{
+             width: 278px;
+             height: 138px;
+         }
+         .header__heading{
             font-size: 36px;
-            /* line-height: 50px; */
+          
+        }
+        .header__right{
+            width: 329px;
+            height: 259px;
         }
         .header__img{
             width: 329px;
             height: 259px;
-        }
+        } 
 
-        /* ----------------main section------------------- */
+
          .players{
              grid-template-columns: auto;
-             width: 100%;
          }
-
-
-         /* ----------------embaded video------------------ */
+          /* ----------------embaded video------------------ */
          .trending-news{
              flex-wrap: wrap;
              justify-content: center;
@@ -284,10 +258,8 @@ height: 438px;
          .match__highlight iframe{
             width: 400px;
          }
-
-
-         /* ----------------trending news section------------- */
-
+      
+   /* ---------Tranding news section---------------- */
          .match__container{
             width: auto;
             width: 462px;
@@ -310,9 +282,9 @@ height: 438px;
         .match__date{
             font-size: 10px;
             padding-left: 3px;
-        }
+        } 
 
-        /* --------------footer sectiion------------ */
+         /* --------------footer sectiion------------ */
         .footer{
             width: 100%;
             margin-left: 0px;
@@ -322,5 +294,5 @@ height: 438px;
             width: 275px;
             height: 63px;
         }
-        
-     }
+
+    }
