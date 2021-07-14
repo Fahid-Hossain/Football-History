@@ -296,3 +296,75 @@ height: 438px;
         }
 
     }
+
+
+    @media only screen and (max-width:415px){
+        .header__heading , .header__btn{
+            margin-left: 5px;
+        }
+        .header__img {
+            width: 270px;
+            height: 200px;
+        }
+        .player {
+            width: 279px;
+            height: 416px;
+            padding: 0px;
+        }
+        .player__img {
+            width: 260px;
+            height: 220px;
+            margin-bottom: 7px;
+            margin-left: 9px;
+        }
+        .player__name{
+            margin-bottom: 0px;
+              font-size: 23px;
+              margin-left:3px;
+        }
+        .player__info{
+            font-size: 16px;
+            line-height: 23px;
+            margin-left: 4px;
+        }
+
+        .match-video__title{
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+        .match__highlight iframe {
+            width: 258px;
+            height: 200px;
+        }
+        .trending-news {
+            display: flex;
+            margin-top: 60px;
+        }
+
+        .next-match__heading{
+            text-align: center;
+        }
+
+        .match__container{
+            width: 256px;
+        }
+        .match__img{
+            display: none;
+        }
+
+        .footer{
+            margin-top: 56px;
+        }
+        .footer__img {
+            width: 223px;
+            height: 51px;
+        }
+        .footer__icons{
+            margin: 7px 0px;
+        }
+        .footer__para {
+            font-size: 13px;
+        }
+
+      
+    }
