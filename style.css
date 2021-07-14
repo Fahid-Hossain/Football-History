@@ -13,10 +13,10 @@
 /* -------------header section-------------- */
 
 .header{
-    width:1440px;
+    width:100%;
     height: 677px;
     background-color: #2D25A0;
-    margin: auto;
+    /* margin: auto; */
 }
 .navbar{
     height: 44px;
@@ -28,6 +28,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /* justify-content: center; */
 }
 
 
@@ -35,10 +36,12 @@
     /* border: 2px solid red; */
     width: 485px;
     height:230px;
+    /* margin-right: 102px; */
 }
 .header__heading{
     font-size: 64px;
     color:#FFFFFF;
+    margin-bottom: 27px;
 }
 .header__btn{
     background-color: #E02C6D;
@@ -72,6 +75,7 @@ height: 438px;
 }
 .players{
     width:1110px;
+    /* width: 77.08%; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap:30px;
@@ -126,6 +130,10 @@ height: 438px;
     height: 36.81px;
     margin:20px 0px;
     /* border: 2px solid rebeccapurple; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+
 }
 .footer__icon{   
     background-color: #e6e6e9;
@@ -133,16 +141,19 @@ height: 438px;
     height: 32px;
     border-radius: 50%;
     display: inline-block;
+    margin-right: 9px;
 }
 .footer__icon i{
     color:#969BAB;
-    position: relative;
-    top:5px;
-    left: 8px; 
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__para{
     font-size: 18px;
     color: #000000;
-    font-weight: 400;
+    font-weight:400;
 }
